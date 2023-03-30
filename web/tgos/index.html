@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>TGOS MAP API 初始化地圖</title>
+    <!-- <script type="text/javascript"src="http://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=yourID&APIKey=yourkey" charset="utf-8"></script> -->
+    <script type="text/javascript" src="http://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=x+JLVSx85Lk=&APIKey=in8W74q0ogpcfW/STwicK8D5QwCdddJf05/7nb+OtDh8R99YN3T0LurV4xato3TpL/fOfylvJ9Wv/khZEsXEWxsBmg+GEj4AuokiNXCh14Rei21U5GtJpIkO++Mq3AguFK/ISDEWn4hMzqgrkxNe1Q==" charset="utf-8"></script>
+    //設定取得API的位址
+    <!-- http://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=x+JLVSx85Lk=&APIKey=in8W74q0ogpcfW/STwicK8D5QwCdddJf05/7nb+OtDh8R99YN3T0LurV4xato3TpL/fOfylvJ9Wv/khZEsXEWxsBmg+GEj4AuokiNXCh14Rei21U5GtJpIkO++Mq3AguFK/ISDEWn4hMzqgrkxNe1Q== -->
+    <!-- http://api.tgos.tw/TGOS_API/tgos?ver=2&AppID=yourID&APIKey=yourkey -->
+    <script type="text/javascript">
+
+        function InitWnd() {
+        
+        var pOMap = document.getElementById("TGMap");  //宣告一個網頁容器
+        
+        var pMap = new TGOS.TGOnlineMap(pOMap, TGOS.TGCoordSys.EPSG3826);
+        
+        //宣告TGOnlineMap物件, 指定網頁容器並設定坐標系統
+        
+        }
+        </script>
+</head>
+<body style="margin: 0px" onload="InitWnd();">
+    <div id="map"></div>
+    <div style="display:inline-flex;">
+        <div id="TGMap" style="width: 1200px; height: 700px; border: 1px solid #C0C0C0;">
+          EPSG:3826
+        </div>
+    </div>
+        <br />
+</body>
+</html>
